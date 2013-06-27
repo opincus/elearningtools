@@ -23,14 +23,14 @@
 		<!-- Tracker -->
 			<script type="text/javascript">
 			(function($) {
-			var CourseName="auskunft";
-			var cookieValue = $.cookie(CourseName);				
+			var CourseID="1000";
+			var cookieValue = $.cookie(CourseID);				
 			if(typeof cookieValue === 'undefined') {
-			$.cookie(CourseName, '1');	
+			$.cookie(CourseID, '1');	
 			$.ajax({
 			cache: false,
 			dataType: "jsonp",                  
-			url: "http://...=" + CourseName + "&format=json"
+			url: "http://...=" + CourseID + "&format=json"
 			});
 			} 
 			else {
